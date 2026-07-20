@@ -5,6 +5,7 @@ body .decision-list span{padding:12px 35px 12px 0;color:var(--navy);transition:p
 body .decision-list span:after{display:none}
 body .decision-list span:hover{padding-left:10px;color:#9a7b2f}
 body .specialty-grid b{display:none}
+body .hero h1 span{display:none}
 /* Preserva o retrato completo no conteúdo editorial. */
 body .article-featured[src$="retrato.webp"]{object-fit:contain;object-position:center;background:#e9e2d6}
 @media (min-width:901px){.faq-grid{grid-template-columns:.95fr 1.05fr;gap:75px}.about h2 em{display:block}}
