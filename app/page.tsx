@@ -21,7 +21,7 @@ export default function Home() {
             <div className="hero-actions"><a className="gold-button" data-position="hero" href={consultant.whatsapp} target="_blank" rel="noreferrer">Agendar conversa com Felipe <b aria-hidden="true">→</b></a><a className="quiet-link" href="#como-funciona">Conhecer o atendimento <b aria-hidden="true">↓</b></a></div>
             <div className="hero-points"><span>Atendimento consultivo</span><span>São Paulo, SP · todo o Brasil</span><span>ES11 Capital</span></div>
           </div>
-          <div className="hero-photo-wrap"><div className="photo-outline" /><img className="hero-photo" src="/felipe-soares-retrato-hq.webp" alt="Felipe Soares, sócio e consultor financeiro da ES11 Capital" /><div className="photo-label"><strong>Felipe Soares</strong><small>Estratégia para o seu momento</small></div></div>
+          <div className="hero-photo-wrap"><div className="photo-outline" /><img className="hero-photo" src="/felipe-soares-retrato-restored.png" alt="Felipe Soares, sócio e consultor financeiro da ES11 Capital" /><div className="photo-label"><strong>Felipe Soares</strong><small>Estratégia para o seu momento</small></div></div>
         </div>
       </section>
 
@@ -31,7 +31,7 @@ export default function Home() {
 
       <section className="audiences section reveal"><div className="container"><div className="section-heading"><div><p className="section-tag light">PARA QUEM É O ATENDIMENTO</p><h2>Para quem pensa patrimônio <em>com seriedade.</em></h2></div><p>O ponto de partida é entender o que você deseja construir, adquirir ou organizar - e definir caminhos compatíveis com sua realidade.</p></div><div className="audience-grid"><article><span>01 / PRIORIDADE</span><h3>Investidores</h3><p>Para quem deseja ampliar patrimônio, avaliar aquisições e usar tempo, liquidez e oportunidades de forma estratégica.</p></article><article><span>02</span><h3>Empresários e profissionais liberais</h3><p>Para estruturar ativos e crescimento sem comprometer o fluxo pessoal ou empresarial.</p></article><article><span>03</span><h3>Famílias e empresas</h3><p>Para transformar projetos de imóveis, veículos, frota ou equipamentos em planejamento de longo prazo.</p></article></div></div></section>
 
-      <section className="decisions section reveal"><div className="container decisions-grid"><div className="decision-image"><img src="/felipe-soares-es11-hq.webp" alt="Felipe Soares em reunião na ES11 Capital" /><span>ES11 CAPITAL</span></div><div><p className="section-tag">EM QUAIS DECISÕES POSSO AJUDAR</p><h2>Clareza antes da sua próxima decisão patrimonial.</h2><div className="decision-list">{decisions.map((decision) => <span key={decision}>{decision}</span>)}</div></div></div></section>
+      <section className="decisions section reveal"><div className="container decisions-grid"><div className="decision-image"><img src="/felipe-soares-es11-restored.png" alt="Felipe Soares em reunião na ES11 Capital" /><span>ES11 CAPITAL</span></div><div><p className="section-tag">EM QUAIS DECISÕES POSSO AJUDAR</p><h2>Clareza antes da sua próxima decisão patrimonial.</h2><div className="decision-list">{decisions.map((decision) => <span key={decision}>{decision}</span>)}</div></div></div></section>
 
       <section className="specialties section reveal" id="especialidades"><div className="container"><p className="section-tag">ESPECIALIDADES</p><div className="specialty-heading"><h2>Estratégias que respeitam o seu momento e <em>o seu futuro.</em></h2><a className="quiet-link navy-link" href={consultant.whatsapp} target="_blank" rel="noreferrer">Falar sobre meu objetivo <b aria-hidden="true">→</b></a></div><div className="specialty-grid">{specialties.map((item)=><article key={item.number}><span>{item.number}</span><i /><h3>{item.title}</h3><p>{item.text}</p><b aria-hidden="true">↗</b></article>)}</div></div></section>
 
@@ -49,4 +49,5 @@ export default function Home() {
     </main>
   );
 }
+
 
