@@ -47,3 +47,15 @@ body .article-featured[src$="retrato.webp"]{object-fit:contain;object-position:c
 @media (max-width:900px){.reveal{opacity:1;transform:none}.hero-photo{border-radius:16px 16px 6px 6px}}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
+
+
+/* Faixa editorial: somente os cards rolam horizontalmente. */
+html,body{overflow-x:clip}
+.reader-list{max-width:none;width:100%;display:flex;gap:20px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;padding:0 max(24px,calc((100vw - 1120px)/2)) 110px;scrollbar-color:#b99a56 #e9e2d6;scrollbar-width:thin}
+.reader-list article{flex:0 0 clamp(310px,31vw,370px);height:510px;min-height:510px;display:flex;flex-direction:column;scroll-snap-align:start}
+.reader-list article>img{height:180px;flex:none}
+.reader-list article h2{min-height:102px}
+.reader-list article p{margin-bottom:20px}
+.reader-list article a{margin-top:auto}
+@media(max-width:680px){.reader-list{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 18px 70px}.reader-list article{flex-basis:calc(100vw - 54px);height:500px;min-height:500px}.reader-list article h2{min-height:0}}
+
