@@ -17,8 +17,8 @@ export async function generateMetadata(): Promise<Metadata> {
     alternates: { canonical: "/" },
     robots: { index: true, follow: true },
     icons: { icon: "/es11-logo.png" },
-    openGraph: { title, description, type: "website", images: [{ url: "/og-whatsapp.jpg?v=20260720-6", width: 1200, height: 630, type: "image/jpeg", alt: "Felipe Soares \u2014 Estrat\u00e9gias patrimoniais com clareza" }] },
-    twitter: { card: "summary_large_image", title, description, images: ["/og-whatsapp.jpg?v=20260720-6"] },
+    openGraph: { title, description, type: "website", images: [{ url: "/og-share-felipe.jpg?v=20260721-1", width: 1200, height: 630, type: "image/jpeg", alt: "Felipe Soares — ES11 Capital" }] },
+    twitter: { card: "summary_large_image", title, description, images: ["/og-share-felipe.jpg?v=20260721-1"] },
   };
 }
 
