@@ -71,3 +71,18 @@ html,body{overflow-x:clip}
 @media(max-width:900px){.difference-inner{grid-template-columns:1fr;gap:24px}.difference-intro{gap:8px}.difference-note{max-width:570px}.floating-whatsapp{right:16px;bottom:16px;width:42px;height:42px}}
 @media(max-width:680px){.nav-inner{position:relative;display:flex}.nav-inner .logo-link{position:absolute;left:50%;transform:translateX(-50%)}.nav-inner .header-cta{margin-left:auto}.nav-inner .menu-button{margin-left:7px}.difference blockquote{font-size:38px}.difference-note{padding-left:18px}}
 
+
+
+/* Alinhamento do primeiro bloco e estabilidade da identifica??o do retrato. */
+.floating-whatsapp-phone{font:25px/1 Arial,sans-serif;display:block;transform:rotate(-18deg) translateY(-1px)}
+@media(min-width:681px){.nav-inner{width:min(1200px,calc(100% - 48px));max-width:none;padding:16px 0}}
+@media(min-width:901px){
+  .hero-grid{align-items:start}
+  .hero-copy{padding-top:96px}
+  .hero-photo-wrap{align-self:start;height:650px;min-height:650px;padding-top:96px}
+  .hero-photo{width:360px;height:540px;transform:scaleX(-1)}
+  .hero-photo-wrap:hover .hero-photo{transform:scaleX(-1) translateY(-6px)}
+  .photo-label{left:0;bottom:56px;width:230px;min-height:78px;display:grid;align-content:center;gap:4px;transform:none!important}
+  .photo-label strong{white-space:nowrap}
+}
+
